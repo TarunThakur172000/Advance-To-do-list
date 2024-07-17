@@ -1,0 +1,37 @@
+
+Input 
+1. Task name
+2. Task date
+3. Task metadata
+4. Task Last date
+5. Status
+
+Api calls
+1. Create task
+- Input: Task name, Task date, Task metadata
+- Output: Task ID
+2. Edit Task / Update
+- Input: Task ID, Task name, Task date, Task metadata
+- Output: Success/Failure
+3. Delete Task
+- Input: Task ID
+- Output: Success/Failure
+4. Get All Task
+- Input: None
+- Output: List of Task ID, Task name, Task date, Task metadata
+5. Get Task by name
+- Input: Task name
+- Output: Task ID, Task date, Task metadata
+6. Task Completed
+- Input: Task ID
+- Output: Success/Failure
+7. Filter previous Task that is Completed
+- Input: None
+- Output: List of Task ID, Task name, Task date, Task metadata ,status
+8. Filter Upcoming Task
+- Input: None
+- Output: List of Task ID, Task name, Task date, Task metadata ,status
+
+
+
+

@@ -1,0 +1,122 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-1{
+display: flex;
+justify-content: space-around;
+padding-top: 2rem;
+}
+.task-section{
+  text-align: center;
+}
+.taskSearch input{
+width: 20rem;
+height: 2rem;
+border-radius: .5rem;
+padding: .2rem;
+}
+.taskSearch button{
+  width: 5rem;
+  height: 2rem;
+  border-radius: .5rem;
+  background-color: #e0933b;
+  border: 2px solid #dcd1c5;
+  margin-left: 1rem;
+}
+
+.taskListHeader{
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+
+}
+.taskListHeader div{
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.taskListHeaderDelete:hover{
+color: gray;
+width: 2rem;
+cursor: pointer;
+}
+.taskListHeaderEdit:hover{
+  color: #a87b4b;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.popup-wrap {
+  width:100%;
+  height:100%;
+  display:none;
+  position:absolute;
+  top:0px;
+  left:0px;
+  content:'';
+  background:rgba(0,0,0,0.85);
+}
+
+.popup-box {
+  width:400px;
+  padding:70px;
+  transform:translate(-50%, -50%) scale(0.5);
+  position:absolute;
+  top:50%;
+  left:50%;
+  box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+  border-radius:3px;
+  background:#fff;
+  text-align:center;
+}
+
+
+.transform-in, .transform-out {
+  display:block;
+  -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+.transform-in {
+	-webkit-transform:translate(-50%, -50%) scale(1);
+	transform:translate(-50%, -50%) scale(1);
+}
+
+.transform-out {
+	-webkit-transform:translate(-50%, -50%) scale(0.5);
+	transform:translate(-50%, -50%) scale(0.5);
+}
